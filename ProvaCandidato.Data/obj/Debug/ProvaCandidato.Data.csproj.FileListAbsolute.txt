@@ -51,3 +51,31 @@ C:\Projetos\ProvaCandidato MVC\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data
 C:\Projetos\ProvaCandidato MVC\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.dll
 C:\Projetos\ProvaCandidato MVC\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.pdb
 C:\Projetos\ProvaCandidato MVC\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.csprojAssemblyReference.cache
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\ProvaCandidato.Data.dll.config
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\ProvaCandidato.Data.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\ProvaCandidato.Data.pdb
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\EntityFramework.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Helpers.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Mvc.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Razor.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\EntityFramework.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Helpers.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Mvc.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.Razor.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.csprojAssemblyReference.cache
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.Migrations.InitialCreate.resources
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.Migrations.Migration.resources
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.csproj.GenerateResource.cache
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.csproj.CopyComplete
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.dll
+C:\Projetos\ProvaCandidato\ProvaCandidato.Data\obj\Debug\ProvaCandidato.Data.pdb

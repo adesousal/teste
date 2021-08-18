@@ -10,7 +10,7 @@ namespace ProvaCandidato.Data
 {
   public class ContextoPrincipal : DbContext
   {
-    const string CONNECTION_STRING = @"Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;";
+    const string CONNECTION_STRING = @"Server=localhost\SQLEXPRESS;Database=ProvaCandidato;Trusted_Connection=True;";
     public ContextoPrincipal() : base(CONNECTION_STRING) { }
 
     public DbSet<Cliente> Clientes { get; set; }
