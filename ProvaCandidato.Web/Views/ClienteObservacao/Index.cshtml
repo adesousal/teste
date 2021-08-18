@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ProvaCandidato.Data.Entidade.ClienteObservacao>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Início</h2>
+
+@{
+    var id = Request.Url.Segments[3];
+}
+<p>    
+    <a type="submit" href="#" class="btn btn-default btnDetails" data-value=@id>Incluir Observação</a>
+</p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Observacao)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Observacao)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.Codigo }) |
+                    @Html.ActionLink("Excluir", "Delete", new { id = item.Codigo })
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <p>
+        @Html.ActionLink("Retornar para a lista de clientes", "Index", "Clientes")
+    </p>
+
+    <div class="modal fade" id="obsModal" tabindex="-1" aria-labelledby="obsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="incluirObservacao"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".btnDetails").click(function () {
+
+                    var id = $(this).data("value");
+                    $("#incluirObservacao").load("/ClienteObservacao/create/" + id, function () {
+                        $("#obsModal").modal("show");
+                    });
+                });
+            })
+        </script>
+    }
