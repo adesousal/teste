@@ -127,7 +127,7 @@ namespace ProvaCandidato.Controllers
 
             if(observacao.Count() > 0)
             {
-                MessageHelper.DisplayErrorMessage(this, "Cliente não pode ser removido até que suas observações sejam removidas");
+                MessageHelper.DisplayErrorMessage(this, "Cliente não pode ser removido até que suas observações sejam removidas.");
                 return RedirectToAction("Index");
             }
             

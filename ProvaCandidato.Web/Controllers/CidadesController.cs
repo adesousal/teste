@@ -57,6 +57,14 @@ namespace ProvaCandidato.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Codigo,Nome")] Cidade cidade)
         {
+            var existe = db.Cidades.AsNoTracking().Where(x => x.Nome == cidade.Nome).Count();
+
+            if (existe > 0)
+            {
+                MessageHelper.DisplayErrorMessage(this, $"A cidade {cidade.Nome} já está cadastrada");
+                return RedirectToAction("Index");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Cidades.Add(cidade);
@@ -120,6 +128,13 @@ namespace ProvaCandidato.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            var cliente = db.Clientes.AsNoTracking().Where(x => x.CidadeId == id).Count();
+
+            if (cliente > 0)
+            {
+                MessageHelper.DisplayErrorMessage(this, "Esta cidade não pode ser removida, pois está associada a algum cliente.");
+                return RedirectToAction("Index");
+            }
             Cidade cidade = db.Cidades.Find(id);
             db.Cidades.Remove(cidade);
             db.SaveChanges();
