@@ -57,9 +57,9 @@ namespace ProvaCandidato.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Codigo,Nome")] Cidade cidade)
         {
-            var existe = db.Cidades.AsNoTracking().Where(x => x.Nome == cidade.Nome).Count();
+            var registro = db.Cidades.AsNoTracking().Where(x => x.Nome == cidade.Nome).Count();
 
-            if (existe > 0)
+            if (registro > 0)
             {
                 MessageHelper.DisplayErrorMessage(this, $"A cidade {cidade.Nome} já está cadastrada");
                 return RedirectToAction("Index");
@@ -98,6 +98,14 @@ namespace ProvaCandidato.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Codigo,Nome")] Cidade cidade)
         {
+            var registro = db.Cidades.AsNoTracking().Where(x => x.Nome == cidade.Nome).Count();
+
+            if (registro > 0)
+            {
+                MessageHelper.DisplayErrorMessage(this, $"A cidade {cidade.Nome} já está cadastrada");
+                return RedirectToAction("Index");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Entry(cidade).State = EntityState.Modified;
