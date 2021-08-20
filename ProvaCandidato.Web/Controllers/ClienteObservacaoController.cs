@@ -34,7 +34,7 @@ namespace ProvaCandidato.Controllers
         // Para obter mais detalhes, confira https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(string observacao, int id)
+        public ActionResult Create(string observacao, int? id)
         {
             Cliente cliente = db.Clientes.Find(id);
 
@@ -52,7 +52,7 @@ namespace ProvaCandidato.Controllers
                 return RedirectToAction("Index", "Clientes");
             }
 
-            return View(obs);
+            return RedirectToAction("Index", "Clientes");
         }
 
         // GET: ClienteObservacaos/Edit/5

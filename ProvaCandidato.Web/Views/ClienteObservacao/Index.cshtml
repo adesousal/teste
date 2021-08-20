@@ -52,16 +52,15 @@
 
 @section Scripts {
     <script type="text/javascript">
-        $(document).ready(function () {
-            var id = $(this).data("value");
-            $("#incluirObservacao").load("/ClienteObservacao/create/" + id, function () {
+
+        $(document).ready(function () {            
+            $("#incluirObservacao").load("/ClienteObservacao/create/" + @id, function () {
                 $("#obsModal").modal("show");
             });
         })
 
         $(document).ready(function () {
             $(".btnDetails").click(function () {
-
                 var id = $(this).data("value");
                 $("#incluirObservacao").load("/ClienteObservacao/create/" + id, function () {
                     $("#obsModal").modal("show");
